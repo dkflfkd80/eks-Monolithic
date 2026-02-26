@@ -1,6 +1,6 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
-metadata:
+metadata:   
   name: argocd-server-ingress
   namespace: argocd
   annotations:
@@ -9,15 +9,15 @@ metadata:
 spec:
   tls:
   - hosts:
-      - argo.aws-esk.com
-    secretName: argo-aws-esk-com-tls
+      - argo.zindogch.com
+    secretName: argo-zindogch-com-tls
   rules:
-  - host: argo.aws-esk.com
+  - host: argo.zindogch.com
     http:
       paths:
         - path: /
           pathType: Prefix
-
+          
           backend:
             service:
               name: argocd-server
