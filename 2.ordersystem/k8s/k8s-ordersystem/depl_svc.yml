@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: ordersystem-backend
-        image: 694322569490.dkr.ecr.ap-northeast-2.amazonaws.com/order-backend:latest
+        image: 694322569490.dkr.ecr.ap-northeast-2.amazonaws.com/order-backend
         ports:
         - containerPort: 8080
         resources:
